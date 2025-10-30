@@ -1,0 +1,122 @@
+{
+  "userInfo": {
+    "name": "John Doe"
+  },
+  "vehicleInfo": {
+    "vin": "1HGBH41JXMN109186",
+    "make": "Tesla",
+    "model": "Model S",
+    "year": 2023,
+    "overallHealth": 78,
+    "mileage": "45,230 km",
+    "registrationDate": "March 2023",
+    "insuranceExpiry": "March 2026",
+    "lastService": "October 2024",
+    "nextService": "April 2025"
+  },
+  "healthMetrics": [
+    {
+      "id": "engine",
+      "name": "Engine Health",
+      "value": 85,
+      "icon": "engine",
+      "status": "good"
+    },
+    {
+      "id": "tires",
+      "name": "Tire Wear",
+      "value": 62,
+      "icon": "circle",
+      "status": "warning"
+    },
+    {
+      "id": "gearbox",
+      "name": "Gearbox",
+      "value": 88,
+      "icon": "settings",
+      "status": "good"
+    },
+    {
+      "id": "brakes",
+      "name": "Brake Pads",
+      "value": 45,
+      "icon": "disc",
+      "status": "warning"
+    },
+    {
+      "id": "battery",
+      "name": "Battery",
+      "value": 92,
+      "icon": "battery",
+      "status": "good"
+    },
+    {
+      "id": "suspension",
+      "name": "Suspension",
+      "value": 75,
+      "icon": "move-vertical",
+      "status": "good"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert-1",
+      "component": "Brake Pads",
+      "severity": "warning",
+      "message": "Front brake pads showing 45% wear",
+      "predictedFailure": "~2,500 km",
+      "icon": "disc"
+    },
+    {
+      "id": "alert-2",
+      "component": "Tire Wear",
+      "severity": "warning",
+      "message": "Rear left tire tread depth below recommended",
+      "predictedFailure": "~3,000 km",
+      "icon": "circle"
+    },
+    {
+      "id": "alert-3",
+      "component": "Engine Oil",
+      "severity": "info",
+      "message": "Oil change recommended within 1,000 km",
+      "predictedFailure": "~1,000 km",
+      "icon": "droplet"
+    }
+  ],
+  "serviceHistory": [
+    {
+      "id": "service-1",
+      "date": "2024-10-15",
+      "type": "Regular Service",
+      "status": "completed",
+      "cost": "$450",
+      "description": "Full vehicle inspection and oil change",
+      "serviceCenter": "Tesla Service Center",
+      "technician": "Mike Johnson",
+      "invoiceNumber": "INV-2024-001"
+    },
+    {
+      "id": "service-2",
+      "date": "2024-08-20",
+      "type": "Tire Rotation",
+      "status": "completed",
+      "cost": "$120",
+      "description": "Tire rotation and alignment",
+      "serviceCenter": "Tesla Service Center",
+      "technician": "Sarah Williams",
+      "invoiceNumber": "INV-2024-002"
+    },
+    {
+      "id": "service-3",
+      "date": "2024-11-05",
+      "type": "Brake Inspection",
+      "status": "scheduled",
+      "cost": "$200",
+      "description": "Brake pad inspection and replacement if needed",
+      "serviceCenter": "Tesla Service Center",
+      "technician": "TBD",
+      "invoiceNumber": "TBD"
+    }
+  ]
+}
