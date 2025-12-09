@@ -1,91 +1,205 @@
-🚗 AgentFleet-AI
-Productive Maintenance & Autonomous Service Scheduling Systems For Automotive OEMs ---
+# 🚗 Auto Pulse
 
-🧠 Overview
-AgentFleet AI is a complete Predictive Maintenance and Autonomous Service Scheduling System built for automotive OEMs operating in the Industry 4.0 ecosystem.
-It leverages telematics data, digital twins, and agentic AI to eliminate unplanned downtime, optimize service operations, and create a continuous improvement feedback loop between field data and manufacturing design.
+A **mobile-first, multi-page web application** focused on vehicle health, maintenance tracking, and automotive insights.  
+The app is designed to feel like a **native mobile application**, with clean navigation, structured screens, and an intuitive user experience.
 
-⚙️ Problem Statement
-Automotive OEMs today face major inefficiencies due to:
+---
 
-🚨 Reactive maintenance strategies leading to high repair costs and customer dissatisfaction.
-📅 Manual service scheduling causing unbalanced workshop loads and missed slots.
-🔄 Lost design insights — field failures rarely reach the R&D and design teams.
-🚀 Our Solution
-AgentFleet AI transforms raw vehicle telemetry into actionable intelligence through a fully autonomous, data-driven pipeline:
+## 🚀 Live Demo
 
-🧩 Predictive Analytics Engine
-Detects early signs of component wear, vibration anomalies, and failure trends in real time using:
+🔗 **Live Application**  
+https://auto-pulse-app-88558.vercel.app
 
-Sensor Fusion
-AI Models (LSTM, degradation models)
-🤖 Autonomous Scheduling System
-A multi-agent optimizer that proactively books maintenance slots, considering:
+---
 
-Vehicle health
-Location
-Severity of issues
-Workshop load and availability
-🛰️ Digital Twin Dashboard
-A real-time visual interface showing:
+## 📱 Overview
 
-Fleet-wide health
-Part lifecycle curves
-Predictive repair timelines
-Continuously syncs with live telemetry for accurate performance forecasting.
-🔁 Data Feedback Loop Integration
-Automatically sends recurring defect data to OEM design and R&D teams, ensuring:
+**Auto Pulse** is a mobile-based web app designed for the automotive domain.  
+It provides users with a simple, accessible interface to view vehicle-related information, track maintenance status, and navigate between different functional screens.
 
-Faster design iterations
-Smarter next-gen product improvements
-💬 Customer Engagement Layer
-An intelligent assistant that:
+Unlike single-page landing apps, Auto Pulse is a **multi-page application** with page-level routing and a clear navigation flow, making it closer to a real-world product experience.
 
-Alerts users about maintenance
-Confirms bookings automatically
-Handles full end-to-end service coordination via mobile or in-vehicle interface
-💡 Impact
-Metric	Impact
-🔧 Reduced Downtime	Predicts 80% of major failures before occurrence
-⚙️ Optimized Operations	Balances service loads dynamically across centers
-🧩 Continuous Improvement	Converts maintenance data into design intelligence
-💬 Enhanced Experience	Vehicles self-book services autonomously
-🧰 Technology Stack
-Data Layer:
+The project focuses on:
+- Mobile-first UX
+- Reusable UI components
+- Clean routing structure
+- Scalable frontend architecture
 
-IoT Telematics (CAN, GPS, Sensor Data)
-Edge Data Preprocessing
-AI Layer:
+---
 
-Time-Series ML Models (LSTM, RUL Estimation)
-Multi-Agent Reasoning System
-Integration Layer:
+## ✨ Key Features
 
-MQTT
-REST APIs
-PLM Feedback Interface
-Visualization:
+- 📱 **Mobile-First Design**  
+  UI is optimized primarily for mobile devices, with layouts and components designed for small screens.
 
-Digital Twin Dashboard built on real-time data streams
-🌐 Business Vision
-AgentFleet AI empowers automotive OEMs to lead the shift toward autonomous maintenance ecosystems, integrating:
+- 🧭 **Multi-Page Navigation**  
+  Separate screens handled through client-side routing instead of a single scroll-based page.
 
-Vehicles
-Workshops
-Manufacturing feedback
-into one continuous intelligence network.
-The platform is scalable, architecture-agnostic, and fully aligned with Industry 4.0 interoperability standards.
+- 📊 **Dashboard-Style Interfaces**  
+  Information presented using cards, lists, and structured sections.
 
-🏁 Future Roadmap
-🔄 Integration with EV Battery Health Monitoring
-🧠 Federated Learning for Cross-Fleet Model Training
-🔧 Self-Healing Predictive Models
-📊 Advanced Anomaly Visualization & Reporting
-🤝 Contributors
-Developed by:
-AgentFleet AI Research Team
+- 🧾 **Form Handling & Validation**  
+  Structured forms with proper validation for user input.
 
-Bridging the gap between data, design, and intelligence.
+- 🔔 **User Feedback & Notifications**  
+  Toasts and alerts for better interactivity and UX.
 
-📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+- 🎨 **Modern UI System**  
+  Clean, consistent design using a component-based UI library.
+
+- ⚡ **Fast Performance**  
+  Built with a modern bundler and optimized rendering.
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- React Router DOM
+
+### UI & Styling
+- Tailwind CSS
+- shadcn/ui
+- Radix UI
+- Lucide Icons
+
+### State & Utilities
+- TanStack React Query
+- React Hook Form
+- Zod
+- Class Variance Authority
+- Tailwind Merge
+
+### Tooling
+- Vite
+- ESLint
+- PostCSS
+- Autoprefixer
+
+---
+
+## 📂 Project Structure
+
+```bash
+auto-pulse-app-88558/
+├── public/
+├── src/
+│   ├── assets/               # Images, icons, static assets
+│   ├── components/
+│   │   ├── ui/               # Shared UI components
+│   │   └── ...               # Feature-specific components
+│   ├── pages/
+│   │   ├── Index.tsx         # Landing / entry screen
+│   │   ├── Auth.tsx          # Authentication screen
+│   │   ├── Dashboard.tsx     # Main dashboard
+│   │   └── NotFound.tsx      # 404 page
+│   ├── hooks/                # Custom React hooks
+│   ├── utils/                # Utility/helper functions
+│   ├── App.tsx               # App layout & routes
+│   └── main.tsx              # Application entry point
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+├── postcss.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧭 Application Flow
+
+- **Index / Landing Page**  
+  Entry point introducing the app and guiding users forward.
+
+- **Authentication Page**  
+  Handles user access and onboarding-style interactions.
+
+- **Dashboard Page**  
+  Core application screen showing vehicle-related insights and actions.
+
+- **Not Found Page**  
+  Fallback UI for invalid routes.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/DISHA7-debug/auto-pulse-app-88558.git
+cd auto-pulse-app-88558
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Run Locally
+
+```bash
+npm run dev
+```
+
+Open the URL shown in the terminal (usually `http://localhost:5173`).
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🌍 Deployment
+
+This project is deployed using **Vercel**.
+
+### Deploy Your Own Version
+
+1. Fork the repository
+2. Import it into https://vercel.com
+3. Set framework to **Vite**
+4. Build command:
+```bash
+npm run build
+```
+5. Output directory:
+```bash
+dist
+```
+
+---
+
+## 🎯 Project Purpose
+
+This project was built to:
+- Practice mobile-first frontend design
+- Implement multi-page routing in React
+- Build a realistic automotive-themed application
+- Showcase frontend skills for **internships and portfolio evaluation**
+
+---
+
+## 📄 License
+
+Personal project created for learning and portfolio purposes.
+
+---
+
+## 👤 Author
+
+**Disha**  
+GitHub: https://github.com/DISHA7-debug
